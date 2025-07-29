@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JSON</title>
+    <style>
+        .post {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1 id="dispaly">Display all post </h1>
+    </header>
     <main>
-        <header>
-            <h1>Display all post </h1>
-        </header>
+        <section>
+            <h3 class="dispaly">ALL post are here</h3>
+            <div id="post-container">
+            </div>
+        </section>
     </main>
     <script src="/json.js"></script>
 </body>
